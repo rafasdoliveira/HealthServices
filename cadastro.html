@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/global.css">
-    <link rel="stylesheet" href="/assets/styles/index.css">
-    <title>Health Services | Login</title>
+    <link rel="stylesheet" href="/assets/styles/cadastro.css">
+    <title>Health Services | Cadastro</title>
 </head>
 <body>
-        <form class="form_container" action="">
+    <form class="form_container" action="">
+            <div class="cta">Registre-se</div>
             <img class="logoHealth" src="/assets/image/cruz.svg" alt="" srcset="">
-            <span class="span_text">Entre com seu login e senha para acessar os serviços</span>
             <div class="login">
-                <div class="login__email">
+                <div class="login__text">
                     <img src="/assets/image/icons/user-regular.svg" alt="">
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="login__email">
+                    <img src="/assets/image/icons/envelope-regular.svg" alt="">
                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
                 </div>
                 <div class="login__password">
                     <img src="/assets/image/icons/lock-solid.svg" alt="">
                     <input type="password" name="password" id="password" placeholder="Senha">
                 </div>
-                <div class="login__lembrar">
-                    <input type="radio" name="lembrar" id="lembrar">
-                    <label class="span_text" for="">Lembrar</label>
+                <div class="login__password">
+                    <img src="/assets/image/icons/lock-solid.svg" alt="">
+                    <input type="password" name="password" id="password" placeholder="Confirmar senha">
                 </div>
             </div>
             <div class="login__button">
                 <button name="login" id="login">
-                    <a href="/">Login</a>
-                </button>
-                
-                <button name="registrar" id="registrar">
-                    <a href="/cadastro.html">Registre-se</a>
+                    <a class="registrar" href="/cadastroRealizado.html">Registrar</a>
                 </button>
             </div>
-            <a href="" class="span_text">Esqueci minha senha</a>
             <img class="logoIcc" src="/assets/image/LogoIcc.svg" alt="" srcset="">
         </form>
         <div class="lines">

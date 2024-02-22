@@ -1,34 +1,41 @@
+html {
+    background-image: url(/assets/image/Depositphotos_10735175_xl-20152\ 1.png);
+}
+
 .form_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 380px;
-    height: 444px;
+    height: 492px;
     border-radius: 10px;
-    border-top: 15px solid #144A6A;
+    border-top: 40px solid #144A6A;
     padding: 23px;
     box-shadow:  5px 5px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.cta {
+    z-index: 0;
+    margin-top: -65px; 
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
 }
 
 .logoHealth {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 282px;
     height: 50px;
-}
-
-.span_text {
-    margin-top: 20px;
-    font-size: 10px;
-    color: #03014C;
-    font-weight: 500;
 }
 
 .login {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .login img {
@@ -98,6 +105,14 @@ button {
     border: 1px solid #144A6A;
 }
 
+.registrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+}
+
 .logoIcc {
     margin-top: 10px;
 }
@@ -118,3 +133,4 @@ button {
     height: 21px;
     background-color: #144A6A;
 }
+
