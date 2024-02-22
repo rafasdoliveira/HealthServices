@@ -1,0 +1,74 @@
+html {
+    background-image: url(/assets/image/Depositphotos_10735175_xl-20152\ 1.png);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 573px;
+    height: 600px;
+}
+
+.logoHealth {
+    width: 282px;
+    height: 50px;
+}
+
+.sucessoImg {
+    margin-top: 40px;
+    width: 321px;
+    height: 240px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #144A6A;
+}
+
+h2 {
+    margin: 10px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#home {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #144A6A;
+    border: none;
+}
+
+.logoIcc {
+    margin-top: 40px;
+}
+
+
+.lines {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.line_green {
+    height: 7px;
+    background-color: #98C2AA;
+}
+
+.line_blue {
+    height: 21px;
+    background-color: #144A6A;
+}

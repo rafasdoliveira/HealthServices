@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 380px;
-    height: 444px;
+    height: 492px;
     border-radius: 10px;
     border-top: 15px solid #144A6A;
     padding: 23px;
@@ -73,7 +73,6 @@ input[type="radio"] {
 }
 
 .login__button {
-    
     margin-top: 15px;
     padding: 8px;
 }
