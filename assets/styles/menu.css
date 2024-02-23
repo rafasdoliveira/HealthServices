@@ -12,43 +12,134 @@ header {
     height: 55px;
     border: none;
     box-shadow:  5px 5px 50px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
 }
 
 .sidebar {
-    border: 1px solid red;
     width: 245px;
-    height: 665px;
+    height: 100vh;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-/* .sidebar_list {
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
 
-} */
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #144A6A;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #144A6A;
+}
 
 ul {
     list-style-type: none;
-    padding: 0;
-    border: 1px solid red;
 }
 
-a {
+ul img {
+    width: 30px;
+    height: 30px;
+}
+
+.a_menu {
+    display: flex;
+    align-items: center;
     color: inherit;
+    margin-left: 30px;
     text-decoration: none;
-    margin-left: 100px;
-    border: 1px solid red;
 }
 
 li {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 245px;
     height: 50px;
-    border: 1px solid red;
+}
+
+.li_menu {
+    background-color: #144A6A;
+}
+
+.menuPrincipal_text {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.menu_text {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #144A6A;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_line {
+    width: 189px;
+    border: 1px solid #144A6A;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1145px;
+    height: 100vh;    
+    color: #000;
 }
 
 
-.menu_text {
-    border: 1px solid red;
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 187px;
+    height: 187px;
+    margin: 10px;
+    border-radius: 36px;
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.a_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card img {
+    width: 108px;
+    height: 87px;
+}
+
+.card_text {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #144A6A;
 }
 
 .lines {
