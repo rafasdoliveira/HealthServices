@@ -117,3 +117,45 @@ button {
     height: 21px;
     background-color: #144A6A;
 }
+
+@media only screen and (max-width: 768px) {
+    .form_container {
+        width: 90%; 
+        height: auto; 
+        padding: 15px; 
+    }
+
+    .logoHealth {
+        width: 2rem; 
+        height: auto; 
+    }
+
+    .span_text {
+        margin-top: 15px; 
+        font-size: 9px; 
+    }
+
+    .login__email,
+    .login__password,
+    .login__text {
+        width: 18rem;
+        margin: 10px; 
+    }
+
+    .login input {
+        padding: 5px; 
+    }
+
+    .login__button {
+        margin-top: 10px; 
+    }
+
+    button {
+        width: 100%; 
+    }
+
+    .lines {
+        display: none; 
+    }
+}
+
