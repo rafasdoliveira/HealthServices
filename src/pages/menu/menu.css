@@ -1,0 +1,71 @@
+html, body {
+    overflow-y: auto; 
+    align-items: start;
+}
+
+.header {
+    z-index: 0;
+    height: 90px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+
+.containerMenu {
+    display: flex;
+    z-index: 1;
+}
+
+.sidebarMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.sidebarMenu::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebarMenu::-webkit-scrollbar-thumb {
+    background-color: #144A6A;
+}
+
+#menuPrincipal {
+    background-color: #144A6A;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.menu_line {
+    width: 189px;
+    border: 1px solid #144A6A;
+}
+
+main {    
+    width: 1090px;
+    margin: 5px 0 0 260px;
+    
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}

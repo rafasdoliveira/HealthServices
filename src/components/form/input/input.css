@@ -1,0 +1,47 @@
+.inputComponent { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 290px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.inputComponent img {
+    width: 16px;
+    height: 16px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border: transparent;
+    color: #03014C;
+}
+
+.input::placeholder {
+    color: #a8a8a8;
+    padding: 5px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .inputComponent {
+        width: 390px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .inputComponent {
+        width: 290px;
+        height: 30px;
+    }
+}
