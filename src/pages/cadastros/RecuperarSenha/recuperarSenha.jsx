@@ -1,5 +1,6 @@
 import Input from '../../../components/form/input/Input'
 import Button from '../../../components/button/Button'
+import Footer from '../../../components/footer/Footer'
 
 import './recuperarSenha.css'
 
@@ -19,6 +20,7 @@ const recuperarSenha = () => {
           <img className="logoIcc" srcSet="/image/LogoIcc.svg" alt=""></img>
         </form>
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -1,6 +1,5 @@
 .recuperarSenha {
     height: 100vh;
-    background-image: url("/image/Depositphotos_10735175_xl-20152 1.png");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,3 +54,40 @@
     background-color: #144A6A;
     border: none;
 }
+
+@media screen and (max-width: 600px) {
+    .recuperarSenha {
+        display: flex;
+        height: 100vh;
+    }
+    .containerRecuperarSenha {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .recuperarSenha {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .recuperarSenha {
+        display: flex;
+        height: 100vh;
+    }
+    .containerRecuperarSenha {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .recuperarSenha {
+        display: flex;
+        height: 100vh;
+    }
+    .containerRecuperarSenha {
+        width: 75%;
+    }
+}
+

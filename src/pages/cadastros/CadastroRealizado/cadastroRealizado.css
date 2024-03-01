@@ -1,11 +1,12 @@
 .cadastroRealizado {
-    height: 100vh;
-    background-image: url("/image/Depositphotos_10735175_xl-20152 1.png");
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 650px;
+    background-image: url("/image/Depositphotos_10735175_xl-20152 1.png");
+    background-size: cover; 
+    background-position: center;
 }
 
 .sucessoImg {
@@ -42,4 +43,50 @@ p {
     color: #fff;
     background-color: #144A6A;
     border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .cadastroRealizado {
+        display: flex;
+        height: 100vh;
+    }
+    .sucessoImg {
+        margin-top: 40px;
+        width: 250px;
+        height: 220px;
+    }
+    .textos {
+        padding: 10px;
+    }
+    h2 {
+        display: flex;
+        font-size: 17px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cadastroRealizado {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cadastroRealizado {
+        display: flex;
+        height: 100vh;
+    }
+   
+}
+
+@media screen and (max-width: 820px) {
+    .cadastroRealizado {
+        display: flex;
+        height: 100vh;
+    }
+    
+
 }

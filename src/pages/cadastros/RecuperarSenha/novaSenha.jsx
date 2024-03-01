@@ -1,12 +1,13 @@
 import Input from '../../../components/form/input/Input'
 import Button from '../../../components/button/Button'
+import Footer from '../../../components/footer/Footer'
 
-import './confirmarToken.css'
+import './novaSenha.css'
 
 const confirmarSenha = () => {
   return (
-    <div className='recuperarSenha'>
-      <div className="containerRecuperarSenha">
+    <div className='novaSenha'>
+      <div className="containerNovaSenha">
         <img className="logoHealth" srcSet="/image/cruz.svg" alt=""/>
         <span className="span_text">Enviamos um código para o seu e-mail</span>
         <form className='form_container'>
@@ -20,6 +21,7 @@ const confirmarSenha = () => {
           <img className="logoIcc" srcSet="/image/LogoIcc.svg" alt=""></img>
         </form>
       </div>
+      <Footer/>
     </div>
   )
 }
