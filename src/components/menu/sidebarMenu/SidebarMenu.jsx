@@ -1,15 +1,24 @@
+//Components
+import constSidebarMenu from "../../../constants/SidebarMenu/constSidebarMenu" 
+//Route
 import { Link } from "react-router-dom"
+//Estilo
 import './sidebarmenu.css'
 
-const SidebarMenu = ({id, to, srcSet, alt, classText, text}) => {
+const SidebarMenu = () => {
+
+  const sidebar = constSidebarMenu()
+
   return (  
-      <ul id={id}>
-        <li>
-          <Link to={to} className="to_menu">
-            <span><img srcSet={srcSet} alt={alt}/></span>
-            <span className="menu_text">{text}</span>
-          </Link>
-        </li>
+      <ul>
+        {sidebar.map((card) => (
+          <li key={card.id} className={card.id === 1 || card.id === 16 ? "principal" : ""}>
+            <Link to={card.to} className="link_menu">
+              <span><img src={card.srcSet} alt={card.alt}/></span>
+              <span className="menu_text">{card.text}</span>
+            </Link>
+          </li>
+        ))}
       </ul>
   )
 }

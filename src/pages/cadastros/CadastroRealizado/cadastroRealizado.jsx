@@ -1,10 +1,14 @@
+// Route
 import { Link } from 'react-router-dom'
+// Style
 import './cadastroRealizado.css'
+// Image
+import Sucesso from '../../../assets/images/images/sucessoCadastro.svg'
 
 const cadastroRealizado = () => {
   return (
     <div className='cadastroRealizado'>
-        <img className="sucessoImg" srcSet="/image/sucessoCadastro.svg" alt="" />
+        <img className="sucessoImg" srcSet={Sucesso} alt="" />
         <div className="textos">
             <h2>Seu cadastro foi realizado com sucesso!</h2>
             <p>Acesse seu e-mail e confirme seus dados.</p>
