@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 // Components
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/Footer';
@@ -10,12 +10,25 @@ import './menu.css';
 import MenuSvg from '../../assets/images/icons/menu-icons/menumobile.svg'
 
 const Menu = () => {
-
-  const [abrirSidebar, setAbrirSidebar] = useState(false)
+  const [abrirSidebar, setAbrirSidebar] = useState(false);
+  const sidebarRef = useRef(null);
 
   const alternarSidebar = () => {
     setAbrirSidebar(!abrirSidebar);
   };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setAbrirSidebar(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [sidebarRef]);
 
   return (
     <>
@@ -26,16 +39,16 @@ const Menu = () => {
         </div>
       </div>
       <div className='menu'>
-        <div className={` ${abrirSidebar ? 'sidebarOpen' : 'containerMenu'}`}>
+        <div ref={sidebarRef} className={`${abrirSidebar ? 'sidebarOpen' : 'containerMenu'}`}>
           <nav className="sidebarMenu">
             <SidebarMenu />
           </nav>
         </div>
-          <main>
-            <div className="cards">
-              <CardMenu />
-            </div>
-          </main>
+        <main>
+          <div className="cards">
+            <CardMenu />
+          </div>
+        </main>
         <Footer />
       </div>
     </>
