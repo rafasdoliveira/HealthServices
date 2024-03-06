@@ -18,7 +18,7 @@ function App() {
         <span className="span_text">Entre com seu login e senha para acessar os serviços</span>
         <form className='form_container'>
           <Input srcSet={Mail} type="email" name="email" id="email" placeholder="Digite seu e-mail" />
-          <Input srcSet={Lock} type="email" name="password" id="password" placeholder="Digite sua senha"/>
+          <Input srcSet={Lock} type="password" name="password" id="password" placeholder="Digite sua senha"/>
           <div className="button_container">
             <div className="button">
               <Button name="login" id="login" to="/menu" text="Login"/>

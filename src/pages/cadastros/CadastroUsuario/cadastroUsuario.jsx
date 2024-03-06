@@ -18,9 +18,9 @@ const CadastroUsuario = () => {
                 <img className="logoHealth" srcSet={LogoHealth} alt=""/>
                 <form className='form_container'>
                     <Input srcSet={User} type="text" name="nome" id="nome" placeholder="Digite seu nome"/>
-                    <Input srcSet={Mail} type="email" name="password" id="password" placeholder="Digite seu e-mail"/>
-                    <Input srcSet={Lock} type="email" name="password" id="password" placeholder="Senha"/>
-                    <Input srcSet={Lock} type="email" name="password" id="password" placeholder="Confirme sua senha"/>
+                    <Input srcSet={Mail} type="email" name="email" id="email" placeholder="Digite seu e-mail"/>
+                    <Input srcSet={Lock} type="password" name="password" id="password" placeholder="Senha"/>
+                    <Input srcSet={Lock} type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirme sua senha"/>
                     <div className="button">
                         <Button name="registrar" id="registrar" to="/cadastrorealizado" text="Registrar"/>
                     </div>

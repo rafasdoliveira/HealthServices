@@ -12,7 +12,7 @@ const SidebarMenu = () => {
   return (  
       <ul>
         {sidebar.map((card) => (
-          <li key={card.id} className={card.id === 1 || card.id === 16 ? "principal" : ""}>
+          <li key={card.id} className={card.id === 1 || card.id === 16 ? "principal" : "liSidebar"}>
             <Link to={card.to} className="link_menu">
               <span><img src={card.srcSet} alt={card.alt}/></span>
               <span className="menu_text">{card.text}</span>
