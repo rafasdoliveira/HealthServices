@@ -19,10 +19,10 @@ import MaterialSvg from '../../assets/images/icons/menu-icons/clarity_blocks-gro
 import MaterialExameSvg from '../../assets/images/icons/menu-icons/fontisto_test-tube-alt.svg'
 import SairSvg from '../../assets/images/icons/menu-icons/whh_exit.svg'
 
-
 const constSidebarMenu = () => {
+    
     const [sidebar] = useState([
-        {id: 1,  to: "/", srcSet:  MenuSvg, alt:"menuIcon", text: "Menu principal"},
+        {id: 1,  to: null, srcSet:  MenuSvg, alt:"menuIcon", text: "Menu principal"},
         {id: 2,  to: "/", srcSet:  GestaoUsuarioSvg, alt:"gestaoUsuarioIcon", text: "Gestão de usuários"},
         {id: 3,  to: "/", srcSet:  GestaoPerfilSvg, alt:"gestaoPerfil", text: "Gestão de perfis"},
         {id: 4,  to: "/", srcSet:  LoteSvg, alt:"gestaoPerfil", text: "Lotes"},

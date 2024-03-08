@@ -17,6 +17,10 @@ const Menu = () => {
     setAbrirSidebar(!abrirSidebar);
   };
 
+  const fecharSidebar = () => {
+    setAbrirSidebar(false);
+  };
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
@@ -41,7 +45,7 @@ const Menu = () => {
       <div className='menu'>
         <div ref={sidebarRef} className={`${abrirSidebar ? 'sidebarOpen' : 'containerMenu'}`}>
           <nav className="sidebarMenu">
-            <SidebarMenu />
+            <SidebarMenu fecharSidebar={fecharSidebar} />
           </nav>
         </div>
         <main>
